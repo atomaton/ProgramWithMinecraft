@@ -11,10 +11,11 @@ cube = [[[57, 57, 57, 57], [57, 0, 0, 57], [57, 0, 0, 57], [57, 57, 57, 57]],
 startingX = x
 startingY = y
 
+#below is the loop that creates the cube
 for depth in cube:
    for height in reversed(depth):
        for block in height:
-           mc.setBlock(x, y, z, block)
+           mc.setBlock(x, y, z, block) #is block defined?
            x += 1
        y += 1
        x = startingX
